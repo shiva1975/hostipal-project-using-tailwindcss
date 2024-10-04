@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+
+        <header class="firstnav h-6 w-full flex bg-blue-500">
+            <nav class="w-full">
+                <ul class="flex justify-between px-16">
+                    <li class="px-12"><a href="#about-us">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+
+        <header class="secondnav h-10 w-full bg-white flex items-center">
+            <nav class="w-full flex items-center">
+                <img class="w-10 h-auto ml-16" src="vasavi-hospital.avif" alt="Vasavi Hospital Logo">
+                <ul class="flex justify-between px-36">
+                    <li class="px-24 cursor-pointer"><i class="fa fa-user-md"> </i> List icons</li>
+                    <li class="px-20 cursor-pointer"><i class="fa fa-user-md">  </i> List icons</li>
+                    <li class="px-20 cursor-pointer"><i class="fa fa-user-md"></i> List icons</li>
+                    <li class="px-20 cursor-pointer"><i class="fa fa-user-md"></i> List icons</li>
+
+
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <div class="pay">
+            <h1 class="text-center text-4xl font-bold mt-4">PAYMENT</h1>
+            <div class="flex justify-between mx-9 mt-6">
+              <h2 class="text-3xl font-serif">Total</h2>
+              <h2 class="text-3xl font-serif">xxxxxx</h2>
+            </div>
+            <hr class="mt-2 border-2 border-black">
+          </div>
+          <div class="name">
+            <input
+            class=" ml-40 h-12 w-72 mt-10 px-4 bg-gray-400 text-black placeholder-gray-600 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            type="text"
+            id="lname"
+            name="FirstName"
+            placeholder="Your first name..">
+            <input
+            class=" ml-40 h-12 w-72 mt-10 px-4 bg-gray-400 text-black placeholder-gray-600 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            type="text"
+            id="lname"
+            name="FirstName"
+            placeholder="Your last name..">     
+          </div>
+          <div class="secdcard">
+            <input
+            class=" ml-40 h-12 w-96 mt-10 px-4 bg-gray-400 text-black placeholder-gray-600 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            type="text"
+            id="lname"
+            name="card number"
+            placeholder="Card Number"
+            oninput="this.value = this.value.slice(0, 16)"
+            >
+            
+            <input
+            class="ml-52 h-12 w-36 mt-10 px-4 bg-gray-400 text-black placeholder-gray-600 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            type="text"
+            id="cvv"
+            name="cvv"
+            placeholder="CVV"
+            min="100"
+            max="999"
+            oninput="this.value = this.value.slice(0, 3)">
+          
+          
+
+          </div>
+          <div class="third flex">
+
+            <img class=" ml-56 h-36 mt-10 w-72" src="cards.png" alt="">
+            <input
+            class="ml-60 h-12 w-36 mt-10 px-4 bg-gray-400 text-black placeholder-gray-600 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            type="month"
+            id="expiry-date"
+            name="expiryDate"
+            placeholder="MM/YYYY"
+            title="MM / YYYY">
+          
+
+          </div>
+
+          <div class="four">
+
+            <input
+            type="text"
+            id="upi-id"
+            name="upiId"
+            placeholder="@upi"
+            class=" ml-40 mt-10 h-12 w-80 px-4 bg-gray-400 text-black placeholder-gray-600 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}"
+            title="Enter a valid UPI ID (e.g., @upi)">
+          </div>
+
+            <div class="flex justify-center">
+          <button class="bg-blue-600 h-12 w-36 mt-7 text-white font-bold flex items-center justify-center rounded-xl ">
+            <i class="fa fa-paper-plane text-black text-2xl px-4"></i>
+            <span>Sumbit</span>
+        </button>
+        
+         </div>
+         <h1 class="mt-10 font-bold text-4xl text-center">Stay heathly</h1>
+         <h1 class="mt-8 font-bold text-3xl text-center">Thank You</h1>
+        </div>
+
+    </div>
+</body>
+</html>

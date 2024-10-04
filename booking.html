@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="amin">
+
+    <header class="firstnav h-6 w-full flex bg-blue-500">
+        <nav class="w-full">
+            <ul class="flex justify-between px-16">
+                <li class="px-12">  <a href="thing.html" class="text-black hover:underline">About Us</a></li>
+                <li><a href="#services">Docter’s </a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+
+    <header class="secondnav h-10 w-full mt-10 bg-white flex items-center">
+        <nav class="w-full flex items-center">
+            <img class="w-10 h-auto ml-16" src="vasavi-hospital.avif" alt="Vasavi Hospital Logo">
+            <ul class="flex justify-between px-36">
+                <li class="px-24 cursor-pointer"><i class="fa fa-user-md"> </i> Docter’s </li>
+                <li class="px-20 cursor-pointer"><i class="fa fa-user-md">  </i> Specialist In </li>
+                <li class="px-20 cursor-pointer"><i class="fa fa-user-md"></i> Contant us</li>
+                <li class="px-5 cursor-pointer underline decoration-blue-500 flex items-center">
+                    <i class="fa fa-user-md mr-2"></i>
+                    <span>Book an <br> Appointment</span>
+                  </li>
+                  
+                  
+
+
+            </ul>
+        </nav>
+    </header>
+    <br>
+<div class="booking">
+    <h1 class="text-center text-3xl font-bold mt-14">BOOKING APPOINTMENT</h1>
+
+    <div class="name flex justify-center">
+        <input
+        class="  h-12 w-72 mt-10 px-4 bg-gray-400 text-black placeholder-gray-600 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+        type="text"
+        id="lname"
+        name="FirstName"
+        placeholder="Your first name..">
+        <input
+        class=" ml-40 h-12 w-72 mt-10 px-4 bg-gray-400 text-black placeholder-gray-600 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+        type="text"
+        id="lname"
+        name="FirstName"
+        placeholder="Your last name..">     
+      </div>
+
+
+     
+
+      <div class="sname flex justify-center">
+
+        <input
+        class="  h-12 w-72 mt-10 px-4 bg-gray-400 text-black placeholder-gray-600 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          type="date"
+          id="expiry-date"
+          name="expiryDate"
+          placeholder="DD/MM/YYYY"
+          title="DD/MM/YYYY">
+      
+        <div class="ml-40 flex items-center mt-10 h-12 w-72 bg-gray-400 rounded-sm px-4">
+          <input 
+            class="h-full bg-gray-400 text-black focus:outline-none"
+            type="time" 
+            id="expiry-time" 
+            name="expiryTime" 
+            title="Select Time" 
+            value="10:00" 
+          />
+          <select class="ml-2 h-full bg-gray-400 text-black focus:outline-none" id="meridiem" name="meridiem">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+
+       
+      
+      </div>
+      <div class="third flex justify-center">
+        
+        <input
+        class="h-12 w-72 mt-10 px-4 bg-gray-400 text-black placeholder-gray-600 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+        type="text"
+        id="lname"
+        name="FirstName"
+        placeholder="For What Problem....">
+    </div>
+    <div class="flex justify-center">
+        <a href="index.html">
+            <button class="bg-blue-600 px-6 h-12 mt-6 text-black font-bold flex items-center justify-center space-x-2 hover:text-white rounded-md">
+                <i class="fa fa-paper-plane text-black text-2xl hover:text-white"></i>
+                <span class="text-center">Submit</span>
+            </button>
+        </a>
+        
+    </div>
+
+
+</div>
+
+</div>
+</body>
+</html>
